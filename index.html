@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NOVA — premium electronics and everyday tech.">
+  <title>NOVA — Better Tech, Thoughtfully Chosen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">NOVA SELECT — Thoughtful tech. Better everyday. <span>Free shipping on demo orders over ₹4,999</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="NOVA home"><span class="brand-mark">N</span><span>NOVA<span class="brand-sub">ELECTRONICS</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">Our philosophy</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="search-focus" aria-label="Focus search">⌕</button>
+      <button class="icon-btn account-btn" id="account-open" aria-label="Account">♙</button>
+      <button class="cart-button" id="cart-open">Bag <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE NOVA EDIT · 2026</p>
+        <h1>Technology that<br><em>moves you.</em></h1>
+        <p class="hero-text">A considered collection of powerful essentials, designed to make every day work a little better.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#shop">Explore the collection <span>↗</span></a><a class="text-link" href="#about">Why NOVA?</a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>✦</span><span>✧</span><span>◈</span></div><div><strong>Curated, not crowded.</strong><small>Only the tech worth keeping.</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract electronics artwork">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="hero-disc"><div class="disc-core"></div><div class="disc-label">N / 01<br><small>DESIGNED FOR<br>EVERYDAY</small></div></div>
+        <div class="floating-chip chip-a"><span>✳</span> Precision audio</div>
+        <div class="floating-chip chip-b"><span>◉</span> Smart living</div>
+        <div class="art-caption">LESS NOISE. MORE SIGNAL.</div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div><span>✳</span> Carefully selected</div><div><span>↗</span> Easy demo checkout</div><div><span>◈</span> Clear, honest specs</div><div><span>⌁</span> Support that listens</div></section>
+
+    <section id="collections" class="collections section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FREQUENCY</p><h2>Made for your kind of day.</h2></div><p>From focused work to switched-off weekends, find the tools that fit your rhythm.</p></div>
+      <div class="collection-grid">
+        <button class="collection-card collection-a" data-category="Audio"><span class="collection-num">01 / AUDIO</span><span class="collection-art audio-art">◉</span><span class="collection-bottom"><strong>Sound, in its element.</strong><span>Shop audio ↗</span></span></button>
+        <button class="collection-card collection-b" data-category="Workspace"><span class="collection-num">02 / WORKSPACE</span><span class="collection-art work-art">⌘</span><span class="collection-bottom"><strong>Make room for focus.</strong><span>Shop workspace ↗</span></span></button>
+        <button class="collection-card collection-c" data-category="Smart Living"><span class="collection-num">03 / SMART LIVING</span><span class="collection-art home-art">⌂</span><span class="collection-bottom"><strong>Small things, smarter.</strong><span>Shop smart living ↗</span></span></button>
+      </div>
+    </section>
+
+    <section id="shop" class="shop-section section-wrap">
+      <div class="section-heading shop-heading"><div><p class="eyebrow">THE CURRENT COLLECTION</p><h2>Good gear. No guesswork.</h2></div><span class="demo-label"><i></i> DEMO CATALOGUE</span></div>
+      <div class="shop-controls">
+        <label class="search-box"><span>⌕</span><input id="product-search" type="search" placeholder="Search the collection..." autocomplete="off"></label>
+        <div class="filter-group" id="filters">
+          <button class="filter active" data-category="All">All items</button><button class="filter" data-category="Audio">Audio</button><button class="filter" data-category="Workspace">Workspace</button><button class="filter" data-category="Smart Living">Smart living</button>
+        </div>
+        <select id="sort-products" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="catalogue-note">Product names, images, prices and inventory are sample demo data. No real order or payment is processed.</p>
+    </section>
+
+    <section class="manifesto" id="about"><div class="manifesto-mark">N.</div><div><p class="eyebrow">OUR PHILOSOPHY</p><h2>Less scrolling.<br><em>Better choosing.</em></h2><p>We believe good technology should earn its place in your life. NOVA is a learning storefront concept built around clarity, useful details, and a calmer way to shop.</p></div><div class="manifesto-aside"><span>01 — USEFUL BY DESIGN</span><span>02 — DETAILS THAT MATTER</span><span>03 — NO HIDDEN SURPRISES</span></div></section>
+
+    <section class="lab-promo"><div><p class="eyebrow">FOR THE CURIOUS</p><h2>Learn how the web works.<br><em>Then learn how to secure it.</em></h2><p>Open the built-in CEH learning lab for safe, simulated exercises on request inspection, input handling, and access control.</p></div><button class="button button-light" id="lab-open">Enter security lab <span>↗</span></button></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">N</span><span>NOVA<span class="brand-sub">ELECTRONICS</span></span></a><span>© 2026 NOVA SELECT · Student project / demo store</span><a href="#shop">Back to the collection ↑</a></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="close-btn" data-close aria-label="Close bag">×</button></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div><p>Shipping and taxes are calculated in a real checkout. This demo does not collect payment details.</p><button class="button button-dark full-width" id="checkout-open">Continue to demo checkout <span>↗</span></button></div>
+  </aside>
+
+  <section class="modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" hidden>
+    <button class="close-btn modal-close" data-close aria-label="Close checkout">×</button><p class="eyebrow">DEMO CHECKOUT</p><h2 id="checkout-title">Almost yours.</h2><p class="modal-intro">This is a front-end learning demo. No payment will be taken and no order will be sent to a server.</p>
+    <form id="checkout-form" class="checkout-form"><label>Name<input name="name" required maxlength="80" placeholder="Your name"></label><label>Email<input name="email" type="email" required maxlength="120" placeholder="you@example.com"></label><label>Delivery note<textarea name="note" maxlength="240" placeholder="Optional note"></textarea></label><div class="subtotal"><span>Demo total</span><strong id="checkout-total">₹0</strong></div><button class="button button-dark full-width" type="submit">Place demo order <span>↗</span></button></form><div id="checkout-result" class="result-box" hidden></div>
+  </section>
+
+  <section class="modal" id="account-modal" role="dialog" aria-modal="true" aria-labelledby="account-title" hidden>
+    <button class="close-btn modal-close" data-close aria-label="Close account">×</button><p class="eyebrow">NOVA ACCOUNT</p><h2 id="account-title">Welcome in.</h2><p class="modal-intro">This starter project has no real account backend yet. Never enter a real password here.</p><form id="account-form" class="checkout-form"><label>Demo username<input name="username" required maxlength="32" placeholder="nova-learner"></label><label>Demo password<input name="password" type="password" required minlength="4" maxlength="32" placeholder="Use a throwaway value"></label><button class="button button-dark full-width">Run local demo sign-in</button></form><div id="account-result" class="result-box" hidden></div></section>
+
+  <section class="modal lab-modal" id="lab-modal" role="dialog" aria-modal="true" aria-labelledby="lab-title" hidden>
+    <button class="close-btn modal-close" data-close aria-label="Close security lab">×</button><p class="eyebrow">ISOLATED LEARNING MODE</p><h2 id="lab-title">The security lab.</h2><p class="modal-intro">These are local simulations. They do not send requests to a server, run SQL, or execute submitted HTML/JavaScript.</p>
+    <div class="lab-tabs"><button class="lab-tab active" data-lab="requests">Request inspector</button><button class="lab-tab" data-lab="input">Input handling</button><button class="lab-tab" data-lab="access">Access control</button></div>
+    <div class="lab-panel" id="lab-requests"><h3>Read a sample HTTP request</h3><pre class="code-sample">GET /products?category=audio HTTP/1.1
+Host: demo.nova.local
+Accept: text/html
+Cookie: session=DEMO_ONLY</pre><p class="lab-question">What should you inspect in Burp Suite when testing your own lab?</p><div class="lab-options"><button data-answer="headers">Headers and parameters</button><button data-answer="passwords">Real users' passwords</button><button data-answer="nothing">Nothing; requests are always safe</button></div><p class="lab-feedback" id="requests-feedback" aria-live="polite"></p></div>
+    <div class="lab-panel" id="lab-input" hidden><h3>Input-handling simulator</h3><label class="lab-input-label">Enter a harmless test string<input id="lab-string" maxlength="120" placeholder="e.g. <script>alert(1)</script>"></label><button class="button button-dark" id="input-test">Inspect as text</button><div class="output-preview"><span>Safe text preview</span><code id="safe-output">Your input will appear here as text.</code></div><p class="lab-hint">Learning point: untrusted input should be encoded for its output context. This demo displays your input as text rather than interpreting it as HTML.</p></div>
+    <div class="lab-panel" id="lab-access" hidden><h3>Access-control decision</h3><p>Signed-in demo user: <strong>customer-104</strong>. Requested order: <strong>order-205</strong> (owned by customer-205).</p><div class="lab-options"><button data-access="allow">Allow access</button><button data-access="deny">Deny access</button></div><p class="lab-feedback" id="access-feedback" aria-live="polite"></p><p class="lab-hint">Learning point: the server must verify ownership for every object request. Hiding a button is not authorization.</p></div>
+    <div class="lab-footer-note">Use only systems you own or have explicit permission to test. The public NOVA demo is not a deliberately vulnerable server.</div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
